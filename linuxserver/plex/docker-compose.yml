@@ -6,12 +6,18 @@ services:
     container_name: plex
     network_mode: host
     environment:
-      - PUID=1000
-      - PGID=1000
+      - PUID=100 
+      - PGID=100 
       - VERSION=docker
+      - TZ=Europe/Zurich
       - PLEX_CLAIM= #optional
     volumes:
-      - /path/to/library:/config
-      - /path/to/tvseries:/tv
-      - /path/to/movies:/movies
+      - /volume1/docker/plex:/config
+      - /volume1/plex-library/tv:/tv
+      - /volume1/plex-library/anime:/anime
+      - /volume1/plex-library/movies:/movies
+    ports:
+      - 32400:32400
+    devices:
+       - /dev/dri:/dev/dri # For H/W transcoding
     restart: unless-stopped
