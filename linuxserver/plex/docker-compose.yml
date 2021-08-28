@@ -6,7 +6,7 @@ services:
     container_name: plex
     network_mode: host
     environment:
-      - PUID=100 
+      - PUID=1026 
       - PGID=100 
       - VERSION=docker
       - TZ=Europe/Zurich
