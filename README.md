@@ -25,7 +25,9 @@ Otherwise i forget
 |[linuxserver/plex](https://hub.docker.com/r/linuxserver/plex)|plex|<ul><li> _PLEX_CLAIM_ environment variable is custom and generated before install</li><li>network_mode: host is required for plex</li><li>_devices - /dev/dri:/dev/dri_ is required for transcoding through the Intel CPU</li></ul>|
 |[linuxserver/tautulli](https://hub.docker.com/r/linuxserver/tautulli)|tautulli|<li>Login with plex account</li>|
 |[linuxserver/jackett](https://hub.docker.com/r/linuxserver/jackett)|jackett|<li>config folder creates a subfolder so i pointed it at /volume1/docker and not /volume1/docker/jackett</li>|
-|[linuxserver/nzbhydra2](https://hub.docker.com/r/linuxserver/nzbhydra2)|nzbhydra2| config mai usata, bo |
+|[linuxserver/nzbhydra2](https://hub.docker.com/r/linuxserver/nzbhydra2)|nzbhydra2| config mai usata, bo, devo riconfigurare tutto |
+|[linuxserver/sabnzbd](https://hub.docker.com/r/linuxserver/sabnzbd)|sabnzbd| config mai usata, bo, devo riconfigurare tutto |
+
 ## Update images
 
 From linuxserver docs:
