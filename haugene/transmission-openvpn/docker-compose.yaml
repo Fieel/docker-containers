@@ -9,10 +9,10 @@ services:
             - PUID=1026
             - PGID=100
             - OPENVPN_PROVIDER=NORDVPN
-            - OPENVPN_CONFIG=switzerland
+            - OPENVPN_CONFIG=switzerland # location in cui cerca i server vpn
             - OPENVPN_USERNAME=user # secret
             - OPENVPN_PASSWORD=psw # secret
-            - LOCAL_NETWORK=192.168.0.0/16
+            - LOCAL_NETWORK=192.168.0.0/24 # messo a 24
             - TZ=Europe/Zurich
         volumes:
             - '/volume1/Downloads/torrent/torrent-blackhole:/data/watch' # watch directory for .torrents
