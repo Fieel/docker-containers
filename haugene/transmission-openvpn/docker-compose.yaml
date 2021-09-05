@@ -9,7 +9,6 @@ services:
             - PUID=1026
             - PGID=100
             - OPENVPN_PROVIDER=NORDVPN
-            - OPENVPN_CONFIG=switzerland # location in cui cerca i server vpn
             - OPENVPN_USERNAME=user # secret
             - OPENVPN_PASSWORD=psw # secret
             - LOCAL_NETWORK=192.168.0.0/24 # messo a 24
