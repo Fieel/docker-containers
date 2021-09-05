@@ -29,6 +29,7 @@ Otherwise i forget
 |[linuxserver/sabnzbd](https://hub.docker.com/r/linuxserver/sabnzbd)|sabnzbd|  |
 |[linuxserver/lidarr](https://hub.docker.com/r/linuxserver/lidarr)|lidarr|  |
 |[linuxserver/bazarr](https://hub.docker.com/r/linuxserver/bazarr)|bazarr|  |
+|[linuxserver/radarr](https://hub.docker.com/r/linuxserver/radarr)|radarr|  |
 
 ## Update images
 

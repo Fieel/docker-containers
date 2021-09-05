@@ -1,0 +1,18 @@
+---
+    version: "2.1"
+    services:
+      radarr:
+        image: ghcr.io/linuxserver/radarr
+        container_name: radarr
+        environment:
+          - PUID=1026
+          - PGID=100
+          - TZ=Europe/Zurich
+        volumes:
+          - /volume1/docker/radarr:/config # config
+          - /volume1/plex-library/movies:/movies # library
+          - /volume1/Downloads/usenet/completed:/downloads-usenet # usenet downloads
+          - /volume1/Downloads/torrent/completed:/downloads-torrent # torrent downloads
+        ports:
+          - 7878:7878
+        restart: unless-stopped
