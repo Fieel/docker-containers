@@ -1,0 +1,18 @@
+---
+    version: "2.1"
+    services:
+      mariadb:
+        image: ghcr.io/linuxserver/mariadb
+        container_name: mariadb
+        environment:
+          - PUID=1026
+          - PGID=100
+          - MYSQL_ROOT_PASSWORD=ROOT_ACCESS_PASSWORD #secret
+          - TZ=Europe/Zurich
+          - MYSQL_DIR=/config
+          - DATADIR=/config/databases
+        volumes:
+          - /volume1/docker/mariadb:/config # config
+        ports:
+          - 3306:3306
+        restart: unless-stopped

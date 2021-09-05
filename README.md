@@ -23,15 +23,16 @@ Otherwise i forget
 |image repo|image name|notes|
 |---|---|---|
 |[linuxserver/plex](https://hub.docker.com/r/linuxserver/plex)|plex|<ul><li> _PLEX_CLAIM_ environment variable is custom and generated before install</li><li>network_mode: host is required for plex</li><li>_devices - /dev/dri:/dev/dri_ is required for transcoding through the Intel CPU</li></ul>|
-|[linuxserver/tautulli](https://hub.docker.com/r/linuxserver/tautulli)|tautulli|<li>Login with plex account</li>|
-|[linuxserver/jackett](https://hub.docker.com/r/linuxserver/jackett)|jackett|<li>config folder creates a subfolder so i pointed it at /volume1/docker and not /volume1/docker/jackett</li>|
+|[linuxserver/radarr](https://hub.docker.com/r/linuxserver/radarr)|radarr||
+|[linuxserver/sonarr](https://hub.docker.com/r/linuxserver/sonarr)|sonarr||
+|[linuxserver/lidarr](https://hub.docker.com/r/linuxserver/lidarr)|lidarr||
+|[linuxserver/bazarr](https://hub.docker.com/r/linuxserver/bazarr)|bazarr||
+|[linuxserver/tautulli](https://hub.docker.com/r/linuxserver/tautulli)|tautulli|<li>Login with plex account on startup</li>|
+|[linuxserver/sabnzbd](https://hub.docker.com/r/linuxserver/sabnzbd)|sabnzbd||
+|[haugene/transmission-openvpn](https://hub.docker.com/r/haugene/transmission-openvpn)|transmission-openvpn| check the subfolder for more infos, also need to update stock vpn psw and username after pulling |
+|[linuxserver/jackett](https://hub.docker.com/r/linuxserver/jackett)|jackett|
 |[linuxserver/nzbhydra2](https://hub.docker.com/r/linuxserver/nzbhydra2)|nzbhydra2| config mai usata, bo, devo riconfigurare tutto, risettare tutti gli indexers :( |
-|[linuxserver/sabnzbd](https://hub.docker.com/r/linuxserver/sabnzbd)|sabnzbd|  |
-|[linuxserver/lidarr](https://hub.docker.com/r/linuxserver/lidarr)|lidarr|  |
-|[linuxserver/bazarr](https://hub.docker.com/r/linuxserver/bazarr)|bazarr|  |
-|[linuxserver/radarr](https://hub.docker.com/r/linuxserver/radarr)|radarr|  |
-|[linuxserver/sonarr](https://hub.docker.com/r/linuxserver/sonarr)|sonarr|  |
-|[haugene/transmission-openvpn](https://hub.docker.com/r/haugene/transmission-openvpn)|transmission-openvpn| check the subfolder for more infos |
+|[linuxserver/mariadb](https://hub.docker.com/r/linuxserver/mariadb)|mariadb|General purpose use db, MYSQL_ROOT_PASSWORD to be set after pulling|
 
 ## Update images
 
