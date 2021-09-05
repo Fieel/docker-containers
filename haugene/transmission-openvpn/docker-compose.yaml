@@ -1,28 +1,30 @@
-version: '3.3'
-services:
-    transmission-openvpn:
-        image: haugene/transmission-openvpn
-        container_name: transmission-openvpn
-        cap_add:
-            - NET_ADMIN
-        environment:
-            - PUID=1026
-            - PGID=100
-            - OPENVPN_PROVIDER=NORDVPN
-            - OPENVPN_CONFIG=switzerland # location in cui cerca i server vpn
-            - OPENVPN_USERNAME=user # secret
-            - OPENVPN_PASSWORD=psw # secret
-            - LOCAL_NETWORK=192.168.0.0/24 # messo a 24
-            - TZ=Europe/Zurich
-        volumes:
-            - /volume1/Downloads/torrent/torrent-blackhole:/data/watch # watch directory for .torrents
-            - /volume1/Downloads/torrent/incomplete:/data/incomplete # temp directory for incomplete torrents
-            - /volume1/Downloads/torrent/completed:/data/completed # folder for completed downloads
-            - /volume1/docker/transmission-openvpn/config:/data/transmission-home # openvpn config
-            - /volume1/docker/transmission-openvpn/resolv.conf:/etc/resolv.conf # My NordVPN DNS servers
-            ports:
-            - 9091:9091 # usato da transmission
-        logging:
-            driver: json-file
-            options:
-                max-size: 10m
+---
+    version: '3.3'
+    services:
+        transmission-openvpn:
+            image: haugene/transmission-openvpn
+            container_name: transmission-openvpn
+            cap_add:
+                - NET_ADMIN
+            environment:
+                - PUID=1026
+                - PGID=100
+                - OPENVPN_PROVIDER=NORDVPN
+                - OPENVPN_CONFIG=switzerland # location in cui cerca i server vpn
+                - OPENVPN_USERNAME=user # secret
+                - OPENVPN_PASSWORD=psw # secret
+                - LOCAL_NETWORK=192.168.0.0/24 # messo a 24
+                - TZ=Europe/Zurich
+            volumes:
+                - /volume1/Downloads/torrent/torrent-blackhole:/data/watch # watch directory for .torrents
+                - /volume1/Downloads/torrent/incomplete:/data/incomplete # temp directory for incomplete torrents
+                - /volume1/Downloads/torrent/completed:/data/completed # folder for completed downloads
+                - /volume1/docker/transmission-openvpn/config:/data/transmission-home # openvpn config
+                - /volume1/docker/transmission-openvpn/resolv.conf:/etc/resolv.conf # My NordVPN DNS servers
+                ports:
+                - 9091:9091 # usato da transmission
+                restart: unless-stopped
+            logging:
+                driver: json-file
+                options:
+                    max-size: 10m
