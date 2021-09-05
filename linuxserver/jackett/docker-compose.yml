@@ -1,0 +1,18 @@
+---
+    version: "2.1"
+    services:
+      jackett:
+        image: ghcr.io/linuxserver/jackett
+        container_name: jackett
+        environment:
+          - PUID=1026
+          - PGID=100
+          - TZ=Europe/Zurich
+          - AUTO_UPDATE=true #optional
+          #- RUN_OPTS=<run options here> #optional
+        volumes:
+          - /volume1/docker:/config
+          - /volume1/Downloads/torrent/torrent-blackhole:/downloads
+        ports:
+          - 9117:9117
+        restart: unless-stopped
