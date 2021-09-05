@@ -14,6 +14,7 @@ Git & docker should be installed in the NAS
 |`git reset --hard`| reset local changes (getting rid of local sensitive variables before pulling)|
 |`docker-compose down`| stop a container|
 |`docker-compose up -d`|start a container, -d for detatched (in background)|
+|`docker-compose pull`|pull updated containers|
 
 ## images notes
 
@@ -23,6 +24,7 @@ Otherwise i forget
 |---|---|---|
 |[linuxserver/plex](https://hub.docker.com/r/linuxserver/plex)|plex|<ul><li> _PLEX_CLAIM_ environment variable is custom and generated before install</li><li>network_mode: host is required for plex</li><li>_devices - /dev/dri:/dev/dri_ is required for transcoding through the Intel CPU</li></ul>|
 |[linuxserver/tautulli](https://hub.docker.com/r/linuxserver/tautulli)|tautulli|<li>Login with plex account</li>|
+|[linuxserver/jackett](https://hub.docker.com/r/linuxserver/jackett)|jackett|<li>config folder creates a subfolder so i pointed it at /volume1/docker and not /volume1/docker/jackett</li>|
 
 ## Update images
 
