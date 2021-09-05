@@ -31,6 +31,7 @@ Otherwise i forget
 |[linuxserver/bazarr](https://hub.docker.com/r/linuxserver/bazarr)|bazarr|  |
 |[linuxserver/radarr](https://hub.docker.com/r/linuxserver/radarr)|radarr|  |
 |[linuxserver/sonarr](https://hub.docker.com/r/linuxserver/sonarr)|sonarr|  |
+|[haugene/transmission-openvpn](https://hub.docker.com/r/haugene/transmission-openvpn)|transmission-openvpn| check the subfolder for more infos |
 
 ## Update images
 
