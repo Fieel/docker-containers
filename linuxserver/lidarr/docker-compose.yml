@@ -1,0 +1,18 @@
+---
+    version: "2.1"
+    services:
+      lidarr:
+        image: ghcr.io/linuxserver/lidarr
+        container_name: lidarr
+        environment:
+          - PUID=1026
+          - PGID=100
+          - TZ=Europe/Zurich
+        volumes:
+          - /volume1/docker/lidarr:/config # config & settings
+          - /volume1/plex-library/music:/music # plex music folder
+          - /volume1/usenet/completed:/downloads-usenet
+          - /volume1/torrent/completed:/downloads-torrent
+        ports:
+          - 8686:8686
+        restart: unless-stopped

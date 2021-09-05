@@ -27,6 +27,7 @@ Otherwise i forget
 |[linuxserver/jackett](https://hub.docker.com/r/linuxserver/jackett)|jackett|<li>config folder creates a subfolder so i pointed it at /volume1/docker and not /volume1/docker/jackett</li>|
 |[linuxserver/nzbhydra2](https://hub.docker.com/r/linuxserver/nzbhydra2)|nzbhydra2| config mai usata, bo, devo riconfigurare tutto |
 |[linuxserver/sabnzbd](https://hub.docker.com/r/linuxserver/sabnzbd)|sabnzbd|  |
+|[linuxserver/lidarr](https://hub.docker.com/r/linuxserver/sabnzbd)|lidarr|  |
 
 ## Update images
 
