@@ -15,13 +15,13 @@ services:
             - LOCAL_NETWORK=192.168.0.0/24 # messo a 24
             - TZ=Europe/Zurich
         volumes:
-            - '/volume1/Downloads/torrent/torrent-blackhole:/data/watch' # watch directory for .torrents
-            - '/volume1/Downloads/torrent/incomplete:/data/incomplete' # temp directory for incomplete torrents
-            - '/volume1/Downloads/torrent/completed:/data/completed' # folder for completed downloads
-            - '/volume1/docker/transmission-openvpn/config:/data/transmission-home' # openvpn config
-            - '/volume1/docker/transmission-openvpn/resolv.conf:/etc/resolv.conf' # My NordVPN DNS servers
+            - /volume1/Downloads/torrent/torrent-blackhole:/data/watch # watch directory for .torrents
+            - /volume1/Downloads/torrent/incomplete:/data/incomplete # temp directory for incomplete torrents
+            - /volume1/Downloads/torrent/completed:/data/completed # folder for completed downloads
+            - /volume1/docker/transmission-openvpn/config:/data/transmission-home # openvpn config
+            - /volume1/docker/transmission-openvpn/resolv.conf:/etc/resolv.conf # My NordVPN DNS servers
             ports:
-            - '9091:9091' # usato da transmission
+            - 9091:9091 # usato da transmission
         logging:
             driver: json-file
             options:
