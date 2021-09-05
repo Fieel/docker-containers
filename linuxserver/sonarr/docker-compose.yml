@@ -1,18 +1,19 @@
 ---
     version: "2.1"
     services:
-      radarr:
-        image: ghcr.io/linuxserver/radarr
-        container_name: radarr
+      sonarr:
+        image: ghcr.io/linuxserver/sonarr
+        container_name: sonarr
         environment:
           - PUID=1026
           - PGID=100
           - TZ=Europe/Zurich
         volumes:
-          - /volume1/docker/radarr:/config # config
-          - /volume1/plex-library/movies:/movies # plex movie library
+          - /volume1/docker/sonarr:/config # config
+          - /volume1/plex-library/tv:/tv # plex tv library
+          - /volume1/plex-library/anime:/anime # plex anime library
           - /volume1/Downloads/usenet/completed:/downloads-usenet # usenet downloads folder
           - /volume1/Downloads/torrent/completed:/downloads-torrent # torrent downloads folder
         ports:
-          - 7878:7878
+          - 8989:8989
         restart: unless-stopped

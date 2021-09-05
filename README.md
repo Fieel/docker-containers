@@ -30,6 +30,7 @@ Otherwise i forget
 |[linuxserver/lidarr](https://hub.docker.com/r/linuxserver/lidarr)|lidarr|  |
 |[linuxserver/bazarr](https://hub.docker.com/r/linuxserver/bazarr)|bazarr|  |
 |[linuxserver/radarr](https://hub.docker.com/r/linuxserver/radarr)|radarr|  |
+|[linuxserver/sonarr](https://hub.docker.com/r/linuxserver/sonarr)|sonarr|  |
 
 ## Update images
 
