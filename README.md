@@ -28,6 +28,7 @@ Otherwise i forget
 |[linuxserver/nzbhydra2](https://hub.docker.com/r/linuxserver/nzbhydra2)|nzbhydra2| config mai usata, bo, devo riconfigurare tutto, risettare tutti gli indexers :( |
 |[linuxserver/sabnzbd](https://hub.docker.com/r/linuxserver/sabnzbd)|sabnzbd|  |
 |[linuxserver/lidarr](https://hub.docker.com/r/linuxserver/lidarr)|lidarr|  |
+|[linuxserver/bazarr](https://hub.docker.com/r/linuxserver/bazarr)|bazarr|  |
 
 ## Update images
 
