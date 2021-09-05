@@ -11,8 +11,8 @@
         volumes:
           - /volume1/docker/lidarr:/config # config & settings
           - /volume1/plex-library/music:/music # plex music folder
-          - /volume1/usenet/completed:/downloads-usenet
-          - /volume1/torrent/completed:/downloads-torrent
+          - /volume1/Downloads/usenet/completed:/downloads-usenet
+          - /volume1/Downloads/torrent/completed:/downloads-torrent
         ports:
           - 8686:8686
         restart: unless-stopped
