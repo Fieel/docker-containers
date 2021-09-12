@@ -31,8 +31,10 @@ Otherwise i forget
 |[linuxserver/sabnzbd](https://hub.docker.com/r/linuxserver/sabnzbd)|sabnzbd||
 |[haugene/transmission-openvpn](https://hub.docker.com/r/haugene/transmission-openvpn)|transmission-openvpn| check the subfolder for more infos, also need to update stock vpn psw and username after pulling |
 |[linuxserver/jackett](https://hub.docker.com/r/linuxserver/jackett)|jackett|
-|[linuxserver/nzbhydra2](https://hub.docker.com/r/linuxserver/nzbhydra2)|nzbhydra2| config mai usata, bo, devo riconfigurare tutto, risettare tutti gli indexers :( |
+|[linuxserver/nzbhydra2](https://hub.docker.com/r/linuxserver/nzbhydra2)|nzbhydra2|  |
 |[linuxserver/mariadb](https://hub.docker.com/r/linuxserver/mariadb)|mariadb|General purpose use db, MYSQL_ROOT_PASSWORD to be set after pulling|
+|[linuxserver/phpmyadmin](https://hub.docker.com/r/linuxserver/phpmyadmin)|phpmyadmin|Had to update the config file config.inc.php adding a line at the end of the file to avoid file permission problems|
+|[netdata/netdata](https://hub.docker.com/r/netdata/netdata)|netdata|[docs](https://learn.netdata.cloud/docs/agent/packaging/docker)|
 
 ## Update images
 
