@@ -4,6 +4,9 @@ services:
     image: netdata/netdata
     container_name: netdata
     hostname: nas.fieel.space # set to fqdn of host
+    environment:
+      - DOCKER_USR=1026
+      - DOCKER_GRP=100
     ports:
       - 19999:19999
     restart: unless-stopped
@@ -19,4 +22,4 @@ services:
       - /etc/group:/host/etc/group:ro
       - /proc:/host/proc:ro
       - /sys:/host/sys:ro
-      - /etc/os-release:/host/etc/os-release:ro
+      - /etc/VERSION:/host/etc/os-release:ro # Non si trova /etc/os-release nell'OS synology :/
