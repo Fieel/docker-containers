@@ -34,7 +34,7 @@ Otherwise i forget
 |[linuxserver/nzbhydra2](https://hub.docker.com/r/linuxserver/nzbhydra2)|nzbhydra2|  |
 |[linuxserver/mariadb](https://hub.docker.com/r/linuxserver/mariadb)|mariadb|General purpose use db, MYSQL_ROOT_PASSWORD to be set after pulling|
 |[linuxserver/phpmyadmin](https://hub.docker.com/r/linuxserver/phpmyadmin)|phpmyadmin|Had to update the config file config.inc.php adding a line at the end of the file to avoid file permission problems|
-|[netdata/netdata](https://hub.docker.com/r/netdata/netdata)|netdata|[docs](https://learn.netdata.cloud/docs/agent/packaging/docker)|
+|[netdata/netdata](https://hub.docker.com/r/netdata/netdata)|netdata|[docs](https://learn.netdata.cloud/docs/agent/packaging/docker), ho aggiunto le environment variables con l'utente e il gruppo manualmente|
 
 ## Update images
 
