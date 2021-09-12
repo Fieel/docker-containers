@@ -12,16 +12,11 @@ services:
     security_opt:
       - apparmor:unconfined
     volumes:
-      - netdataconfig:/etc/netdata
-      - netdatalib:/var/lib/netdata
-      - netdatacache:/var/cache/netdata
+      - /volume1/docker/netdata/netdataconfig:/etc/netdata
+      - /volume1/docker/netdata/netdatalib:/var/lib/netdata
+      - /volume1/docker/netdata/netdatacache:/var/cache/netdata
       - /etc/passwd:/host/etc/passwd:ro
       - /etc/group:/host/etc/group:ro
       - /proc:/host/proc:ro
       - /sys:/host/sys:ro
       - /etc/os-release:/host/etc/os-release:ro
-
-volumes:
-  netdataconfig: /volume1/docker/netdata/netdataconfig
-  netdatalib: /volume1/docker/netdata/netdatalib
-  netdatacache: /volume1/docker/netdata/netdatacache
