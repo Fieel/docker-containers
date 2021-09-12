@@ -16,3 +16,6 @@
         ports:
           - 3306:3306
         restart: unless-stopped
+    networks:
+      default:
+        name: mariadb_phpmyadmin_network # Stesso network di phpmyadmin

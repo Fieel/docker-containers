@@ -1,0 +1,21 @@
+---
+    version: '2.1'
+    services:
+      phpmyadmin:
+        image: ghcr.io/linuxserver/phpmyadmin
+        container_name: phpmyadmin
+        environment:
+          - PUID=1026
+          - PGID=100
+          - TZ=Europe/Zurich
+        # - PMA_ARBITRARY=0 # Voglio connettermi direttamente ad un solo db
+          - PMA_HOST=mariadb # container_name di mariadb
+          - PMA_ABSOLUTE_URI=http://nas.fieel.space:8889/ #optional
+        volumes:
+          - /volume1/docker/phpmyadmin:/config
+        ports:
+          - 8889:80 # 8889 scelta da me a caso
+        restart: unless-stopped
+    networks:
+      default:
+        name: mariadb_phpmyadmin_network # Stesso network di mariadb
