@@ -1,0 +1,16 @@
+---
+    version: "2.1"
+    services:
+      homeassistant:
+        image: lscr.io/linuxserver/homeassistant
+        containes_name: homeassistant
+        network_mode: host
+        environment:
+          - PUID=1026
+          - PGID=100
+          - TZ=Europe/Zurich
+        volumes:
+          - /volume1/docker/homeassistant:/config
+        ports:
+          - 8123:8123 #optional
+        restart: unless-stopped
